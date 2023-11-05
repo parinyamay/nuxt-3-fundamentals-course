@@ -1,19 +1,14 @@
 <script lang="ts" setup>
-const isLoggedIn = useIsLoggedIn();
+const user = useUser();
 
 // definePageMeta() use for specified the layout that you want to use
 definePageMeta({
   layout: "plain",
 });
-
-const login = () => {
-  isLoggedIn.value = true;
-  useRouter().push("/");
-};
 </script>
 
 <template>
-  <form @submit.prevent="login">
+  <form @submit.prevent="user.login">
     <h1>Login</h1>
     <label>
       Usename
