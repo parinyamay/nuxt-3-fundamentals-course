@@ -1,0 +1,10 @@
+<script lang="ts" setup></script>
+
+<template>
+  <nav style="display: flex; gap: 10px">
+    <NuxtLink to="/">Home</NuxtLink>
+    <NuxtLink to="/Movies">Movies</NuxtLink>
+    <NuxtLink to="https://vueschool.io">Vue School</NuxtLink>
+  </nav>
+  <slot></slot>
+</template>
