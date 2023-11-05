@@ -2,7 +2,7 @@
 const route = useRoute();
 // useFetch is similar to useAsyncData() but it shorthand form
 const { data } = await useFetch(
-  `http://www.omdbapi.com/?apikey=bacc261b&i=${route.params.id}`,
+  `https://www.omdbapi.com/?apikey=bacc261b&i=${route.params.id}`,
   {
     // This is shorthand for transform
     pick: ["Plot", "Title", "Poster"],
